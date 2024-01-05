@@ -90,7 +90,7 @@ function TabContent({ item }) {
 
       <div className="tab-undo">
         <button onClick={handleUndo}>Undo</button>
-        <button>Undo in 2s</button>
+        <button onClick={() => setTimeout(handleUndo, 2000)}>Undo in 2s</button>
       </div>
     </div>
   );
